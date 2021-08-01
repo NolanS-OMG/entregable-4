@@ -28,7 +28,7 @@ const TodoContainer = () => {
     }, [items] )
 
     return (
-        <div className = "todo-container">
+        <div>
             <TodoItem updateFunc = {updateTasks}/>
             <CreateTodo data = {data} updateFunc = {updateTasks}/>
         </div>
