@@ -1,13 +1,116 @@
-body {
+* {
   margin: 0;
+  padding: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+#root {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+ul {
+  list-style: none;
+}
+
+h4 {
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.todo-container {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  height: 90%;
+  margin: auto;
+}
+
+.todo-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.todo-item h4 {
+  margin-bottom: 1%;
+}
+
+.todo-item form {
+  display: flex;
+  flex-direction: row;
+}
+
+.inputs-container{
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+}
+
+.todo-item form button {
+  width: 10%;
+  height: 100%;
+  margin: auto;
+  color: white;
+  background-color: rgb(52, 207, 52);
+  border: solid 1px rgb(0, 70, 0);
+  border-radius: 3px;
+}
+
+.user-input-container {
+  width: 35%;
+}
+
+.task-input-container {
+  width: 60%;
+}
+.task-input-container input {
+  width: 85%;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  padding: 0.5%;
+  margin: 1%;
+  border: solid 1px black;
+  border-radius: 5px;
+  height: 45px;
+}
+
+.item div {
+  display: flex;
+  justify-content: space-around;
+  width: 25%;
+  height: 100%;
+}
+
+.item-name {
+  width: 25%;
+}
+
+.item-task {
+  width: 40%;
+  margin-left: 3%;
+  margin-right: 7%;
+}
+
+.delete-button {
+  width: 40%;
+  color: white;
+  background-color: rgb(252, 40, 40);
+  border: solid 1px rgb(122, 2, 2);
+  border-radius: 3px;
+}
+
+.complete-button {
+  width: 40%;
+  border-radius: 3px;
 }
